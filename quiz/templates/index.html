@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Quiz App</title>
+</head>
+<body>
+<p></p>
+<h1>Questions</h1>
+<ul>
+  {% for d in data %}
+    <li>{{ d.question }}</li>
+    <li>{{ d.correct_answer}}</li>
+  {% endfor %}
+</ul>
+</body>
+
+</html>

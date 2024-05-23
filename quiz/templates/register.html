@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login Page</title>
+</head>
+<body>
+ <h3>Register to Quiz App</h3>
+<form method="POST">
+{% csrf_token %}
+    {{ form.as_p}}
+    <button type="submit">Register</button>
+</form>
+
+</body>
+</html>
